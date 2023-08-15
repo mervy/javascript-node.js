@@ -1,4 +1,4 @@
-[Home](https://mervy.github.io/js-working-dates/) | [Exercises](https://mervy.github.io/js-working-dates/pages/exercises) | [Challenges](https://mervy.github.io/js-working-dates/pages/challenges)
+[Home](https://mervy.github.io/javascript-node.js) | [Exercises](https://mervy.github.io/javascript-node.js//pages/exercises) | [Projects](https://mervy.github.io/javascript-node.js/pages/projects)
 
 # Node.js Learning Roadmap
 
