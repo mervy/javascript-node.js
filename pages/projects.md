@@ -2,6 +2,24 @@
 
 # Projetos
 
+| [01. Quiz](https://mervy.github.io/javascript-node.js#01-quiz) |
+| [02. Landing page](https://mervy.github.io/javascript-node.js#02-landing-page) |
+| [03. App de clima](https://mervy.github.io/javascript-node.js#03-app-de-clima) |
+| [04. Aplicativo de receitas](https://mervy.github.io/javascript-node.js#04-aplicativo-de-receitas) |
+| [05. Blog](https://mervy.github.io/javascript-node.js#05-blog) |
+| [06. Lista de tarefas](https://mervy.github.io/javascript-node.js#06-aplicativo-de-lista-de-tarefas) |
+| [07. Blog pessoal](https://mervy.github.io/javascript-node.js#07-blog-pessoal) |
+| [08. Chat em tempo real](https://mervy.github.io/javascript-node.js#08-chat-em-tempo-real) |
+| [09. API de filmes/séries](https://mervy.github.io/javascript-node.js#09-api-de-filmesséries) |
+| [10. Gerenciador de finanças pessoais](https://mervy.github.io/javascript-node.js#10-gerenciador-de-finanças-pessoais) |
+| [11. Plataforma de e-commerce simples](https://mervy.github.io/javascript-node.js#11-plataforma-de-e-commerce-simples) |
+| [12. Aplicativo de Previsão do Tempo](https://mervy.github.io/javascript-node.js#12-aplicativo-de-previsão-do-tempo) |
+| [13. Rede Social de Música](https://mervy.github.io/javascript-node.js#13-rede-social-de-música) |
+| [14. Gerenciador de Notas](https://mervy.github.io/javascript-node.js#14-gerenciador-de-notas) |
+| [15. API de Cotações de Ações](https://mervy.github.io/javascript-node.js#15-api-de-cotações-de-ações) |
+
+
+
 Aqui estão algumas ideias de projetos que você pode considerar para aplicar seus conhecimentos em Node.js e criar aplicações práticas e úteis:
 
 1. **Aplicativo de Lista de Tarefas:**
@@ -2441,7 +2459,7 @@ Lembre-se de substituir os placeholders (como `SUA_STRIPE_SECRET_KEY`, `SUA_STRI
 
  um projeto básico que pode ser expandido com recursos adicionais, como detalhes do produto, categorias, histórico de pedidos, etc.
 
-Aplicativo de Previsão do Tempo:
+## 12. Aplicativo de Previsão do Tempo
 Crie um aplicativo que forneça previsões do tempo com base na localização dos usuários. Use APIs de terceiros para obter dados meteorológicos e Node.js para criar o servidor.
 
 Claro! Vou guiar você na criação de um aplicativo de previsão do tempo usando Node.js para criar o servidor e uma API de terceiros para obter dados meteorológicos. Neste exemplo, usaremos a API do OpenWeatherMap para obter as informações de previsão do tempo.
@@ -2591,7 +2609,7 @@ Acesse `http://localhost:3000` no seu navegador para usar o aplicativo de previs
 Certifique-se de substituir os placeholders (como `SUA_CHAVE_DE_API`) pela sua chave de API real. Este é um projeto básico que pode ser expandido com recursos adicionais, como exibição de ícones de clima, previsão de vários dias, entre outros.
 
 
-Rede Social de Música:
+## 13. Rede Social de Música
 Desenvolva uma rede social onde os usuários possam compartilhar suas músicas favoritas, criar playlists e seguir outros usuários. Use Node.js para gerenciar as interações entre os usuários e para armazenar informações sobre as músicas.
 
 Claro! Vou guiar você na criação de uma rede social de música usando Node.js para o backend e armazenamento de informações sobre as músicas. Neste exemplo, abordaremos a criação de usuários, compartilhamento de músicas, criação de playlists e a funcionalidade de seguir outros usuários.
@@ -2929,7 +2947,7 @@ Lembre-se de implementar as lógicas no banco de dados para criar usuários, com
 
  músicas, criar playlists e seguir usuários. Este é apenas um exemplo básico, e você pode expandir e personalizar as funcionalidades de acordo com suas necessidades. Certifique-se de planejar bem a estrutura da base de dados e a lógica das rotas antes de começar a implementação.
 
-Gerenciador de Notas:
+## 14. Gerenciador de Notas
 Crie um aplicativo para fazer anotações e organizá-las por categorias. Use Node.js para criar o backend e um banco de dados para armazenar as notas dos usuários.
 
 Claro! Vou mostrar como você pode criar um aplicativo de gerenciamento de notas usando Node.js para o backend e um banco de dados para armazenar as notas dos usuários. Neste exemplo, vamos usar o banco de dados SQLite.
@@ -3218,7 +3236,7 @@ router.post('/add-note', (req, res) => {
 
 Lembre-se de que este é um exemplo básico para ilustrar a lógica das rotas e das páginas de visualização. Você pode expandir essas funcionalidades adicionando recursos como edição de notas, exclusão de notas, pesquisa, categorias personalizadas, etc. Certifique-se de testar e ajustar o código de acordo com suas necessidades e o funcionamento do seu banco de dados.
 
-API de Cotações de Ações:
+## 15. API de Cotações de Ações
 Construa uma API que forneça informações atualizadas sobre cotações de ações. Use Node.js para criar o servidor e integre-se a uma API de terceiros que ofereça dados de mercado.
 
 Claro! Vou mostrar como você pode criar uma API de cotações de ações usando Node.js e integrar-se a uma API de terceiros para obter informações atualizadas sobre as cotações de ações. Neste exemplo, usaremos a API Alpha Vantage para obter os dados de mercado.
