@@ -2,21 +2,21 @@
 
 # Projetos
 
-| [01. Quiz](https://mervy.github.io/javascript-node.js#01-quiz) |
-| [02. Landing page](https://mervy.github.io/javascript-node.js#02-landing-page) |
-| [03. App de clima](https://mervy.github.io/javascript-node.js#03-app-de-clima) |
-| [04. Aplicativo de receitas](https://mervy.github.io/javascript-node.js#04-aplicativo-de-receitas) |
-| [05. Blog](https://mervy.github.io/javascript-node.js#05-blog) |
-| [06. Lista de tarefas](https://mervy.github.io/javascript-node.js#06-aplicativo-de-lista-de-tarefas) |
-| [07. Blog pessoal](https://mervy.github.io/javascript-node.js#07-blog-pessoal) |
-| [08. Chat em tempo real](https://mervy.github.io/javascript-node.js#08-chat-em-tempo-real) |
-| [09. API de filmes/séries](https://mervy.github.io/javascript-node.js#09-api-de-filmesséries) |
-| [10. Gerenciador de finanças pessoais](https://mervy.github.io/javascript-node.js#10-gerenciador-de-finanças-pessoais) |
-| [11. Plataforma de e-commerce simples](https://mervy.github.io/javascript-node.js#11-plataforma-de-e-commerce-simples) |
-| [12. Aplicativo de Previsão do Tempo](https://mervy.github.io/javascript-node.js#12-aplicativo-de-previsão-do-tempo) |
-| [13. Rede Social de Música](https://mervy.github.io/javascript-node.js#13-rede-social-de-música) |
-| [14. Gerenciador de Notas](https://mervy.github.io/javascript-node.js#14-gerenciador-de-notas) |
-| [15. API de Cotações de Ações](https://mervy.github.io/javascript-node.js#15-api-de-cotações-de-ações) |
+| [01. Quiz](https://mervy.github.io/javascript-node.js/pages/projects#01-quiz) 
+| [02. Landing page](https://mervy.github.io/javascript-node.js/pages/projects#02-landing-page) 
+| [03. App de clima](https://mervy.github.io/javascript-node.js/pages/projects#03-app-de-clima) 
+| [04. Aplicativo de receitas](https://mervy.github.io/javascript-node.js/pages/projects#04-aplicativo-de-receitas) 
+| [05. Blog](https://mervy.github.io/javascript-node.js/pages/projects#05-blog) 
+| [06. Lista de tarefas](https://mervy.github.io/javascript-node.js/pages/projects#06-aplicativo-de-lista-de-tarefas) 
+| [07. Blog pessoal](https://mervy.github.io/javascript-node.js/pages/projects#07-blog-pessoal) 
+| [08. Chat em tempo real](https://mervy.github.io/javascript-node.js/pages/projects#08-chat-em-tempo-real) 
+| [09. API de filmes/séries](https://mervy.github.io/javascript-node.js/pages/projects#09-api-de-filmesséries) 
+| [10. Gerenciador de finanças pessoais](https://mervy.github.io/javascript-node.js/pages/projects#10-gerenciador-de-finanças-pessoais) 
+| [11. Plataforma de e-commerce simples](https://mervy.github.io/javascript-node.js/pages/projects#11-plataforma-de-e-commerce-simples) 
+| [12. Aplicativo de Previsão do Tempo](https://mervy.github.io/javascript-node.js/pages/projects#12-aplicativo-de-previsão-do-tempo) 
+| [13. Rede Social de Música](https://mervy.github.io/javascript-node.js/pages/projects#13-rede-social-de-música) 
+| [14. Gerenciador de Notas](https://mervy.github.io/javascript-node.js/pages/projects#14-gerenciador-de-notas) 
+| [15. API de Cotações de Ações](https://mervy.github.io/javascript-node.js/pages/projects#15-api-de-cotações-de-ações) |
 
 
 
