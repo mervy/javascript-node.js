@@ -1,3 +1,5 @@
+[Home](https://mervy.github.io/js-working-dates/) | [Exercises](https://mervy.github.io/js-working-dates/pages/exercises) | [Challenges](https://mervy.github.io/js-working-dates/pages/challenges)
+
 Projetos
 
 Claro! Aqui estão algumas ideias de projetos que você pode considerar para aplicar seus conhecimentos em Node.js e criar aplicações práticas e úteis:

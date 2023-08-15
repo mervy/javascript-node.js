@@ -1,3 +1,4 @@
+[Home](https://mervy.github.io/js-working-dates/) | [Exercises](https://mervy.github.io/js-working-dates/pages/exercises) | [Challenges](https://mervy.github.io/js-working-dates/pages/challenges)
 
 Claro! Aqui estão 100 questões de múltipla escolha para testar seus conhecimentos em Node.js:
 

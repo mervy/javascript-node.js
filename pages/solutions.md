@@ -1,3 +1,5 @@
+[Home](https://mervy.github.io/js-working-dates/) | [Exercises](https://mervy.github.io/js-working-dates/pages/exercises) | [Challenges](https://mervy.github.io/js-working-dates/pages/challenges)
+
 Aqui estão as respostas para as perguntas anteriores:
 
 **Conceitos Básicos e Configuração:**
