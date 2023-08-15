@@ -1,4 +1,4 @@
-[Home](https://mervy.github.io/javascript-node.js) | [Exercises](https://mervy.github.io/javascript-node.js//pages/exercises) | [Projects](https://mervy.github.io/javascript-node.js/pages/projects)
+<img src="../node-logo.png" alt="Node.js logo" style="width:100px;"/> | [Home](https://mervy.github.io/javascript-node.js) | [Exercises](https://mervy.github.io/javascript-node.js//pages/exercises) | [Projects](https://mervy.github.io/javascript-node.js/pages/projects)
 
 Aqui estão as respostas para as perguntas anteriores:
 
