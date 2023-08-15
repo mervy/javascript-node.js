@@ -186,3 +186,5 @@ Claro! Aqui estão 100 questões de múltipla escolha para testar seus conhecime
 100. Como você pode usar HTTPS e SSL/TLS para proteger a comunicação entre um aplicativo Node.js e os clientes?
 
 Lembre-se de que essas questões são apenas uma amostra para testar seus conhecimentos em Node.js. Responder a essas perguntas ajudará a avaliar o seu entendimento e identificar áreas em que você pode precisar estudar ou aprimorar suas habilidades.
+
+[Solutions](https://mervy.github.io/javascript-node.js/pages/solutions)

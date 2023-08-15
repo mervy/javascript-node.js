@@ -2,8 +2,6 @@
 
 # Node.js Learning Roadmap
 
-Quais são os tópicos que devo estudar em node.js, do basico ao avançado, para enternder a linguagem e ter um bom aprendizado e poder construir app robustos
-
 Para dominar o Node.js desde o básico até um nível avançado e ser capaz de construir aplicativos robustos, é importante cobrir uma variedade de tópicos. Aqui está uma lista de tópicos que você deve estudar em cada fase do aprendizado:
 
 **Nível Básico:**

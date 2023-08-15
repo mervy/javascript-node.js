@@ -1,8 +1,8 @@
 [Home](https://mervy.github.io/javascript-node.js) | [Exercises](https://mervy.github.io/javascript-node.js//pages/exercises) | [Projects](https://mervy.github.io/javascript-node.js/pages/projects)
 
-Projetos
+# Projetos
 
-Claro! Aqui estão algumas ideias de projetos que você pode considerar para aplicar seus conhecimentos em Node.js e criar aplicações práticas e úteis:
+Aqui estão algumas ideias de projetos que você pode considerar para aplicar seus conhecimentos em Node.js e criar aplicações práticas e úteis:
 
 1. **Aplicativo de Lista de Tarefas:**
    Crie um aplicativo de lista de tarefas onde os usuários possam adicionar, marcar como concluídas e remover tarefas. Use Express.js para criar o servidor e armazene as tarefas em um banco de dados.
@@ -35,7 +35,8 @@ Claro! Aqui estão algumas ideias de projetos que você pode considerar para apl
     Construa uma API que forneça informações atualizadas sobre cotações de ações. Use Node.js para criar o servidor e integre-se a uma API de terceiros que ofereça dados de mercado.
 
 Lembre-se de que o objetivo dos projetos é aplicar e consolidar seus conhecimentos, então não tenha medo de ser criativo e experimentar novas ideias. À medida que você trabalha nesses projetos, você ganhará confiança e habilidades valiosas que o ajudarão a se tornar um desenvolvedor mais competente em Node.js.
-User
+
+## 01. Quiz
 Monte um quiz com opção de inserir as perguntas e as 5 repostas bem como definir qual resposta é a correta;
 O quiz deve contar quantas questões estão no banco de dados mysql e mostrar a quantidade de acertos e porcentagem
 ao final do quiz. 
@@ -96,10 +97,8 @@ quiz-app/
 Lembre-se de que esse é um guia de alto nível para criar um quiz com as funcionalidades que você descreveu. Cada etapa envolve várias tarefas específicas que você precisará implementar. À medida que você avança no projeto, consulte a documentação do Node.js, Express.js, MySQL e outras bibliotecas relevantes para obter mais informações sobre como implementar cada parte.
 
 Este projeto pode ser uma excelente maneira de aplicar seus conhecimentos em JavaScript, Node.js e MySQL, além de aprimorar suas habilidades de desenvolvimento web. Boa sorte e divirta-se construindo o seu quiz!
-User
-Mostre todos os códigos necessários
 
-Claro! Vou fornecer a estrutura básica do projeto e os principais trechos de código para cada parte do projeto, conforme os passos que descrevi anteriormente.
+Vou fornecer a estrutura básica do projeto e os principais trechos de código para cada parte do projeto, conforme os passos que descrevi anteriormente.
 
 **Passo 1: Configuração do Ambiente:**
 
@@ -156,7 +155,7 @@ const PORT = process.env.PORT || 3000;
 
 const db = mysql.createConnection({
   host: 'localhost',
-  user: 'root',
+  : 'root',
   password: 'senha',
   database: 'quizdb'
 });
@@ -181,7 +180,7 @@ app.listen(PORT, () => {
 <body>
   <h1>Quiz App</h1>
   <form id="loginForm">
-    <input type="text" placeholder="Nome de usuário" id="username">
+    <input type="text" placeholder="Nome de usuário" id="name">
     <button type="submit">Login</button>
   </form>
 </body>
@@ -231,14 +230,14 @@ app.get('/questions', (req, res) => {
 });
 
 app.post('/check-answer', (req, res) => {
-  const { questionId, userAnswer } = req.body;
+  const { questionId, Answer } = req.body;
 
   db.query('SELECT correctAnswer FROM questions WHERE id = ?', [questionId], (err, rows) => {
     if (err) {
       res.status(500).json({ error: 'Erro ao buscar resposta correta.' });
     } else {
       const correctAnswer = rows[0].correctAnswer;
-      const isCorrect = correctAnswer === userAnswer;
+      const isCorrect = correctAnswer === Answer;
 
       res.json({ isCorrect });
     }
@@ -265,13 +264,13 @@ app.post('/check-answer', (req, res) => {
 // ...
 
 app.get('/results', (req, res) => {
-  const { userId } = req.query;
+  const { Id } = req.query;
 
   db.query('SELECT COUNT(*) AS total FROM questions', (err, totalRows) => {
     if (err) {
       res.status(500).json({ error: 'Erro ao calcular quantidade total de perguntas.' });
     } else {
-      db.query('SELECT COUNT(*) AS correct FROM user_answers WHERE user_id = ? AND is_correct = true', [userId], (err, correctRows) => {
+      db.query('SELECT COUNT(*) AS correct FROM _answers WHERE _id = ? AND is_correct = true', [Id], (err, correctRows) => {
         if (err) {
           res.status(500).json({ error: 'Erro ao calcular quantidade de respostas corretas.' });
         } else {
@@ -290,7 +289,9 @@ app.get('/results', (req, res) => {
 ```
 
 Lembre-se de ajustar as configurações do banco de dados (como usuário e senha) conforme necessário. Além disso, este é apenas um exemplo simplificado para ilustrar o processo. Você precisará adicionar mais lógica e tratamento de erros para criar um aplicativo mais robusto e seguro.
-User
+
+## 02. Landing page
+
 Uma landing page, é uma página que tem como objetivo vender um produto ou captar um cadastro, é o tipo de trabalho mais comum para iniciantes e uma ótima oportunidade para praticar seus conhecimentos de HTML e CSS, mas aqui usar javascript puro e node.js se necessário
 
 Com certeza, criar uma landing page é um ótimo exercício para aplicar seus conhecimentos em HTML, CSS e até mesmo JavaScript puro e Node.js. Vou lhe mostrar como criar uma landing page simples, com formulário de cadastro, usando essas tecnologias.
@@ -469,7 +470,9 @@ signupForm.addEventListener('submit', (e) => {
 Lembre-se de adaptar o código acima às suas necessidades e adicionar recursos como validações, armazenamento de e-mails em um banco de dados ou integração com serviços de e-mail marketing.
 
 Com esses passos, você criou uma landing page simples usando HTML, CSS, JavaScript puro e Node.js. Essa é apenas uma abordagem inicial e você pode aprimorar e expandir a página conforme sua criatividade e necessidades específicas.
-User
+
+## 03. App de clima
+
 Desenvolva um App de clima não muito complexo, o importante é fornecer informações meteorológicas conforme a localização do usuário. O usuário informará a cidade e será dado o clima/temperatura do dia. Usar as tecnologias citadas
 
 Claro! Vou mostrar como criar um aplicativo de clima simples que permite aos usuários obter informações meteorológicas com base na cidade que eles fornecem. Vamos usar HTML, CSS, JavaScript puro e Node.js, juntamente com a API de previsão do tempo do OpenWeatherMap.
@@ -654,7 +657,10 @@ cityForm.addEventListener('submit', async (e) => {
 Lembre-se de substituir `'SUA_CHAVE_DE_API'` pela chave de API fornecida pelo OpenWeatherMap. Além disso, ajuste o código conforme necessário para atender às suas necessidades específicas.
 
 Com esses passos, você criou um aplicativo de clima simples que permite aos usuários obter informações meteorológicas com base na cidade que eles fornecem. Esse é apenas um exemplo inicial, e você pode aprimorar e expandir o aplicativo com recursos adicionais, como exibição de ícones de clima, previsões futuras e muito mais.
-User
+
+
+## 04. Aplicativo de receitas
+
 Desenvolva um aplicativo com várias receitas, ideal para o nicho de emagrecimento e saúde. Esse aplicativo deve usar Consumo de API
 Criação de display de categorias de uma lista Navegação entre telas do aplicativo/site. Usar as tecnologias já citadas
 
@@ -847,7 +853,9 @@ fetchRecipes();
 ```
 
 Com esses passos, você criou um aplicativo de receitas saudáveis que exibe diferentes pratos com informações relevantes. Essa é uma base inicial que pode ser expandida adicionando funcionalidades como filtragem por categoria, exibição detalhada das receitas e muito mais. Certifique-se de substituir `'SUA_CHAVE_DE_API'` pela chave de API fornecida pela API de receitas que você escolher utilizar.
-User
+
+## 05. Blog
+
 Site basico tipo blog com posts de notícias com categorias, texto, imagem, autor, data de cadastro, etc com opção de listagem de categorias ou todos os posts, com paginação dos resultados nas paginas. Usar html, css, js, node.js e mysql. Criar a parte admin para CRUD das noticias, autores, etc
 
 Claro! Vou guiar você na criação de um site básico tipo blog com posts de notícias, categorias, autor, data de cadastro e uma área de administração para CRUD (Criar, Ler, Atualizar, Deletar) das notícias, autores, etc. Vamos usar HTML, CSS, JavaScript puro, Node.js e MySQL. 
@@ -890,7 +898,7 @@ const mysql = require('mysql2');
 
 const db = mysql.createConnection({
   host: 'localhost',
-  user: 'seu_usuario',
+  : 'seu_usuario',
   password: 'sua_senha',
   database: 'basic_blog_db'
 });
@@ -1027,10 +1035,8 @@ Lembre-se de que este é um guia básico e que você pode expandir e personaliza
 Certifique-se de substituir os placeholders (como `seu_usuario`, `sua_senha` e `SUA_CHAVE_DE_API`) pelos valores reais. E também, implemente práticas seguras, como validação de entrada, sanitização de dados e proteção contra SQL injection.
 
 Este é um projeto amplo e detalhado, então fique à vontade para fazer ajustes e melhorias conforme suas habilidades e objetivos.
-User
-Mostre código css, Crie a página de administração em public/admin.html e estilize-a com public/admin-styles.css, rie as rotas necessárias para o CRUD e manipulação do banco de dados em src/routes.js e src/db.js.
 
-Claro! Vou continuar a partir do ponto onde paramos e mostrar a você como criar a página de administração, estilizar com CSS e adicionar as rotas necessárias para o CRUD e manipulação do banco de dados.
+Vou continuar a partir do ponto onde paramos e mostrar a você como criar a página de administração, estilizar com CSS e adicionar as rotas necessárias para o CRUD e manipulação do banco de dados.
 
 **Passo 7: Criando a Página de Administração e Estilizando com CSS:**
 
@@ -1200,8 +1206,9 @@ app.listen(PORT, () => {
 ```
 
 Este é um projeto de exemplo básico que inclui a criação da página de administração, estilização com CSS e a configuração das rotas necessárias para o CRUD e manipulação do banco de dados. Lembre-se de substituir os placeholders (como `seu_usuario`, `sua_senha` e outros) pelos valores reais. Também considere adicionar autenticação de usuário, validação de entrada e outras medidas de segurança, dependendo das suas necessidades.
-User
-Aplicativo de Lista de Tarefas:
+
+## 06. Aplicativo de Lista de Tarefas
+
 Crie um aplicativo de lista de tarefas onde os usuários possam adicionar, marcar como concluídas e remover tarefas. Use Express.js para criar o servidor e armazene as tarefas em um banco de dados.
 
 Claro! Vou guiar você na criação de um aplicativo de lista de tarefas simples usando Express.js como servidor e um banco de dados para armazenar as tarefas. Vamos usar Node.js, Express.js, MySQL como banco de dados e HTML/CSS/JavaScript para o front-end.
@@ -1240,7 +1247,7 @@ const mysql = require('mysql2');
 
 const db = mysql.createConnection({
   host: 'localhost',
-  user: 'seu_usuario',
+  : 'seu_usuario',
   password: 'sua_senha',
   database: 'todo_app_db'
 });
@@ -1402,11 +1409,12 @@ node src/server.js
 Acesse `http://localhost:3000` no seu navegador para usar o aplicativo de lista de tarefas.
 
 Este é um projeto básico que pode ser expandido e melhorado com recursos adicionais, como edição de tarefas, filtro por tarefas concluídas, autenticação de usuário e muito mais. Certifique-se de substituir os placeholders (como `seu_usuario`, `sua_senha` e outros) pelos valores reais.
-User
-Blog Pessoal:
+
+## 07. Blog Pessoal
+
 Desenvolva um blog pessoal onde os usuários possam criar e editar postagens. Use Express.js para criar as rotas e armazene as postagens em um banco de dados. Implemente recursos como autenticação de usuário para permitir que os autores gerenciem suas próprias postagens.
 
-Claro! Vou guiar você na criação de um blog pessoal onde os usuários podem criar e editar postagens. Vamos usar Express.js para criar as rotas e armazenar as postagens em um banco de dados. Além disso, implementaremos recursos de autenticação de usuário para permitir que os autores gerenciem suas próprias postagens. Utilizaremos Node.js, Express.js, MySQL para o banco de dados, Passport.js para autenticação e EJS para as visualizações.
+Vou guiar você na criação de um blog pessoal onde os usuários podem criar e editar postagens. Vamos usar Express.js para criar as rotas e armazenar as postagens em um banco de dados. Além disso, implementaremos recursos de autenticação de usuário para permitir que os autores gerenciem suas próprias postagens. Utilizaremos Node.js, Express.js, MySQL para o banco de dados, Passport.js para autenticação e EJS para as visualizações.
 
 **Passo 1: Estrutura de Diretórios:**
 
@@ -1444,7 +1452,7 @@ const mysql = require('mysql2');
 
 const db = mysql.createConnection({
   host: 'localhost',
-  user: 'seu_usuario',
+  : 'seu_usuario',
   password: 'sua_senha',
   database: 'personal_blog_db'
 });
@@ -1465,7 +1473,7 @@ CREATE TABLE posts (
   content TEXT,
   author_id INT,
   created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
-  FOREIGN KEY (author_id) REFERENCES users(id)
+  FOREIGN KEY (author_id) REFERENCES s(id)
 );
 ```
 
@@ -1488,25 +1496,25 @@ const bcrypt = require('bcrypt');
 const db = require('./db');
 
 function initialize(passport) {
-  const authenticateUser = async (email, password, done) => {
-    const [rows, fields] = await db.promise().query('SELECT * FROM users WHERE email = ?', [email]);
+  const authenticate = async (email, password, done) => {
+    const [rows, fields] = await db.promise().query('SELECT * FROM s WHERE email = ?', [email]);
     
     if (rows.length === 0) {
       return done(null, false, { message: 'Usuário não encontrado' });
     }
     
-    const user = rows[0];
-    if (await bcrypt.compare(password, user.password)) {
-      return done(null, user);
+    const  = rows[0];
+    if (await bcrypt.compare(password, .password)) {
+      return done(null, );
     } else {
       return done(null, false, { message: 'Senha incorreta' });
     }
   }
 
-  passport.use(new LocalStrategy({ usernameField: 'email' }, authenticateUser));
-  passport.serializeUser((user, done) => done(null, user.id));
-  passport.deserializeUser(async (id, done) => {
-    const [rows, fields] = await db.promise().query('SELECT * FROM users WHERE id = ?', [id]);
+  passport.use(new LocalStrategy({ nameField: 'email' }, authenticate));
+  passport.serialize((, done) => done(null, .id));
+  passport.deserialize(async (id, done) => {
+    const [rows, fields] = await db.promise().query('SELECT * FROM s WHERE id = ?', [id]);
     done(null, rows[0]);
   });
 }
@@ -1529,7 +1537,7 @@ const router = express.Router();
 router.get('/', (req, res) => {
   db.query('SELECT * FROM posts ORDER BY created_at DESC', (err, posts) => {
     if (err) throw err;
-    res.render('home', { user: req.user, posts });
+    res.render('home', { : req., posts });
   });
 });
 
@@ -1549,9 +1557,9 @@ router.get('/dashboard', (req, res) => {
   if (!req.isAuthenticated()) {
     return res.redirect('/login');
   }
-  db.query('SELECT * FROM posts WHERE author_id = ?', [req.user.id], (err, posts) => {
+  db.query('SELECT * FROM posts WHERE author_id = ?', [req..id], (err, posts) => {
     if (err) throw err;
-    res.render('dashboard', { user: req.user, posts });
+    res.render('dashboard', { : req., posts });
   });
 });
 
@@ -1584,7 +1592,7 @@ Crie os arquivos de layout `layout.ejs` e as páginas de visualização em `view
     <nav>
       <ul>
         <li><a href="/">Home</a></li>
-        <% if (user) { %>
+        <% if () { %>
           <li><a href="/dashboard">Dashboard</a></li>
           <li><a href="/logout">Logout</a></li>
         <% } else { %>
@@ -1703,9 +1711,10 @@ node src/server.js
 Acesse `http://localhost:3000` no seu navegador para usar o blog pessoal com recursos de autenticação e gerenciamento de postagens.
 
 Este é um projeto básico que pode ser expandido e melhorado com recursos adicionais, como edição de perfil de usuário, páginas de detalhes de postagem, tags, categorias, etc. Certifique-se de substituir os placeholders (como `seu_usuario`, `sua_senha` e outros) pelos valores reais.
-User
 
-Chat em Tempo Real:
+
+## 08. Chat em Tempo Real
+
 Crie um aplicativo de chat em tempo real usando WebSockets. Os usuários podem criar salas de chat e se comunicar em tempo real. Isso pode ser estendido para adicionar recursos como emojis, imagens e histórico de mensagens.
 
 Claro! Vou guiar você na criação de um aplicativo de chat em tempo real usando WebSockets. Vamos utilizar Node.js, Express.js para o servidor, Socket.IO para a comunicação em tempo real e HTML/CSS/JavaScript para o front-end.
@@ -1833,9 +1842,9 @@ node src/server.js
 Acesse `http://localhost:3000` no seu navegador para usar o aplicativo de chat em tempo real. Você pode abrir várias abas ou janelas do navegador para simular diferentes usuários conversando em tempo real.
 
 Este é um projeto básico de chat em tempo real que pode ser expandido com recursos adicionais, como criação de salas de chat, suporte a emojis, envio de imagens, histórico de mensagens, entre outros.
-User
 
-API de Filmes/Séries:
+
+## 09. API de Filmes/Séries
 Construa uma API que forneça informações sobre filmes e séries, como detalhes, avaliações e trailers. Use Node.js para criar o servidor e armazene os dados em um banco de dados.
 
 Claro! Vou guiar você na criação de uma API de filmes e séries usando Node.js para criar o servidor e um banco de dados para armazenar os dados. Vamos usar Express.js para as rotas e MySQL como o banco de dados.
@@ -1868,7 +1877,7 @@ const mysql = require('mysql2');
 
 const db = mysql.createConnection({
   host: 'localhost',
-  user: 'seu_usuario',
+  : 'seu_usuario',
   password: 'sua_senha',
   database: 'movie_series_db'
 });
@@ -1983,8 +1992,9 @@ node src/server.js
 A API de filmes e séries estará disponível em `http://localhost:3000/api`.
 
 Este é um projeto básico que pode ser expandido para incluir mais informações sobre os filmes e séries, como elenco, gênero, ano de lançamento, entre outros. Certifique-se de substituir os placeholders (como `seu_usuario`, `sua_senha` e outros) pelos valores reais.
-User
-Gerenciador de Finanças Pessoais:
+
+## 10. Gerenciador de Finanças Pessoais
+
 Desenvolva um aplicativo para ajudar os usuários a gerenciar suas finanças pessoais. Os usuários podem registrar despesas, categorizar transações e gerar relatórios. Use Express.js para criar o servidor e um banco de dados para armazenar os dados financeiros.
 
 Claro! Vou guiar você na criação de um aplicativo de gerenciamento de finanças pessoais usando Node.js e Express.js para criar o servidor, além de utilizar um banco de dados MySQL para armazenar os dados financeiros.
@@ -2023,7 +2033,7 @@ const mysql = require('mysql2');
 
 const db = mysql.createConnection({
   host: 'localhost',
-  user: 'seu_usuario',
+  : 'seu_usuario',
   password: 'sua_senha',
   database: 'personal_finance_db'
 });
@@ -2200,8 +2210,9 @@ node src/server.js
 Acesse `http://localhost:3000` no seu navegador para usar o aplicativo de gerenciamento de finanças pessoais.
 
 Este é um projeto básico que pode ser expandido com recursos adicionais, como edição e exclusão de transações, categorias personalizadas, relatórios de gastos mensais, entre outros. Certifique-se de substituir os placeholders (como `seu_usuario`, `sua_senha` e outros) pelos valores reais.
-User
-Plataforma de E-Commerce Simples:
+
+## 11. Plataforma de E-Commerce Simples
+
 Crie uma plataforma de comércio eletrônico onde os usuários possam listar produtos, adicionar ao carrinho e fazer compras. Use Express.js para criar o backend e integre um sistema de pagamento para processar transações.
 
 Claro! Vou guiar você na criação de uma plataforma de e-commerce simples usando Node.js, Express.js para o backend e a biblioteca Stripe para processar pagamentos.
@@ -2429,7 +2440,7 @@ Acesse `http://localhost:3000` no seu navegador para usar a plataforma de e-comm
 Lembre-se de substituir os placeholders (como `SUA_STRIPE_SECRET_KEY`, `SUA_STRIPE_PUBLISHABLE_KEY`, `seu_usuario`, `sua_senha` e outros) pelos valores reais. Este é
 
  um projeto básico que pode ser expandido com recursos adicionais, como detalhes do produto, categorias, histórico de pedidos, etc.
-User
+
 Aplicativo de Previsão do Tempo:
 Crie um aplicativo que forneça previsões do tempo com base na localização dos usuários. Use APIs de terceiros para obter dados meteorológicos e Node.js para criar o servidor.
 
@@ -2578,7 +2589,7 @@ node src/server.js
 Acesse `http://localhost:3000` no seu navegador para usar o aplicativo de previsão do tempo.
 
 Certifique-se de substituir os placeholders (como `SUA_CHAVE_DE_API`) pela sua chave de API real. Este é um projeto básico que pode ser expandido com recursos adicionais, como exibição de ícones de clima, previsão de vários dias, entre outros.
-User
+
 
 Rede Social de Música:
 Desenvolva uma rede social onde os usuários possam compartilhar suas músicas favoritas, criar playlists e seguir outros usuários. Use Node.js para gerenciar as interações entre os usuários e para armazenar informações sobre as músicas.
@@ -2647,9 +2658,9 @@ const sqlite3 = require('sqlite3').verbose();
 const db = new sqlite3.Database(':memory:');
 
 db.serialize(() => {
-  db.run(`CREATE TABLE users (
+  db.run(`CREATE TABLE s (
     id INTEGER PRIMARY KEY AUTOINCREMENT,
-    username TEXT UNIQUE,
+    name TEXT UNIQUE,
     email TEXT UNIQUE,
     password TEXT
   )`);
@@ -2658,15 +2669,15 @@ db.serialize(() => {
     id INTEGER PRIMARY KEY AUTOINCREMENT,
     title TEXT,
     artist TEXT,
-    userId INTEGER,
-    FOREIGN KEY (userId) REFERENCES users(id)
+    Id INTEGER,
+    FOREIGN KEY (Id) REFERENCES s(id)
   )`);
 
   db.run(`CREATE TABLE playlists (
     id INTEGER PRIMARY KEY AUTOINCREMENT,
     name TEXT,
-    userId INTEGER,
-    FOREIGN KEY (userId) REFERENCES users(id)
+    Id INTEGER,
+    FOREIGN KEY (Id) REFERENCES s(id)
   )`);
 
   db.run(`CREATE TABLE playlist_songs (
@@ -2780,7 +2791,7 @@ Estilize a página em `public/styles.css` de acordo com suas preferências.
 Implemente a lógica das rotas e das páginas de visualização em `src/routes.js` e `views/` de acordo com as funcionalidades desejadas (criação de usuários, compartilhamento de músicas, criação de playlists, seguir usuários, etc.).
 
 Este é um projeto básico que pode ser expandido com muitos outros recursos, como sistema de autenticação, compartilhamento de músicas, funcionalidade de busca, etc. Certifique-se de planejar bem a estrutura e a lógica do aplicativo antes de começar a implementação.
-User
+
 Implemente a lógica das rotas e das páginas de visualização em src/routes.js e views/ de acordo com as funcionalidades desejadas (criação de usuários, compartilhamento de músicas, criação de playlists, seguir usuários, etc.).
 
 Claro! Vou mostrar como implementar algumas funcionalidades básicas em relação à criação de usuários, compartilhamento de músicas, criação de playlists e seguir outros usuários na rede social de música.
@@ -2795,8 +2806,8 @@ Vamos implementar a página de registro de usuários e a funcionalidade de cria�
 <div class="register">
   <h2>Cadastrar Novo Usuário</h2>
   <form action="/register" method="POST">
-    <label for="username">Nome de Usuário:</label>
-    <input type="text" name="username" required>
+    <label for="name">Nome de Usuário:</label>
+    <input type="text" name="name" required>
     <label for="email">E-mail:</label>
     <input type="email" name="email" required>
     <label for="password">Senha:</label>
@@ -2814,7 +2825,7 @@ router.get('/register', (req, res) => {
 
 router.post('/register', (req, res) => {
   // Lógica para criar o novo usuário no banco de dados
-  const { username, email, password } = req.body;
+  const { name, email, password } = req.body;
   // Implemente a lógica para inserir o usuário no banco de dados
   res.redirect('/login');
 });
@@ -2893,7 +2904,7 @@ Vamos implementar a funcionalidade de seguir outros usuários.
 <% layout('layout') %>
 <div class="profile">
   <h2>Perfil de Usuário</h2>
-  <h3><%= username %></h3>
+  <h3><%= name %></h3>
   <ul>
     <li>Músicas Compartilhadas:</li>
     <!-- Lista de músicas compartilhadas pelo usuário -->
@@ -2907,7 +2918,7 @@ Vamos implementar a funcionalidade de seguir outros usuários.
 **`src/routes.js`**
 ```javascript
 router.post('/follow/:id', (req, res) => {
-  const userId = req.params.id;
+  const Id = req.params.id;
   // Lógica para seguir o usuário no banco de dados
   // Implemente a lógica para registrar a relação de seguidores
   res.redirect('/profile/:id');
@@ -2917,7 +2928,7 @@ router.post('/follow/:id', (req, res) => {
 Lembre-se de implementar as lógicas no banco de dados para criar usuários, compartilhar
 
  músicas, criar playlists e seguir usuários. Este é apenas um exemplo básico, e você pode expandir e personalizar as funcionalidades de acordo com suas necessidades. Certifique-se de planejar bem a estrutura da base de dados e a lógica das rotas antes de começar a implementação.
-User
+
 Gerenciador de Notas:
 Crie um aplicativo para fazer anotações e organizá-las por categorias. Use Node.js para criar o backend e um banco de dados para armazenar as notas dos usuários.
 
@@ -3090,7 +3101,7 @@ Estilize a página em `public/styles.css` de acordo com suas preferências.
 Implemente a lógica das rotas e das páginas de visualização em `src/routes.js` e `views/` de acordo com as funcionalidades desejadas (listar categorias, listar notas, adicionar notas, etc.).
 
 Este é um projeto básico que pode ser expandido com muitos outros recursos, como edição de notas, exclusão de notas, pesquisa de notas, etc. Certifique-se de planejar bem a estrutura da base de dados e a lógica das rotas antes de começar a implementação.
-User
+
 Implemente a lógica das rotas e das páginas de visualização em src/routes.js e views/ de acordo com as funcionalidades desejadas (listar categorias, listar notas, adicionar notas, etc.).
 
 Claro! Vou continuar a partir do ponto anterior e mostrar como você pode implementar a lógica das rotas e das páginas de visualização para listar categorias, listar notas e adicionar notas.
@@ -3206,7 +3217,7 @@ router.post('/add-note', (req, res) => {
 ```
 
 Lembre-se de que este é um exemplo básico para ilustrar a lógica das rotas e das páginas de visualização. Você pode expandir essas funcionalidades adicionando recursos como edição de notas, exclusão de notas, pesquisa, categorias personalizadas, etc. Certifique-se de testar e ajustar o código de acordo com suas necessidades e o funcionamento do seu banco de dados.
-User
+
 API de Cotações de Ações:
 Construa uma API que forneça informações atualizadas sobre cotações de ações. Use Node.js para criar o servidor e integre-se a uma API de terceiros que ofereça dados de mercado.
 
