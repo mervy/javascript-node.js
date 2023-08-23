@@ -317,7 +317,7 @@ Variáveis podem ter escopo global (acessíveis em todo o programa) ou escopo lo
 
 Esses são apenas conceitos básicos, e JavaScript possui muitos outros recursos poderosos. Uma compreensão sólida desses fundamentos é crucial para desenvolver aplicativos bem estruturados e eficazes usando Node.js.
 
-Criando e exportando módulos.
+## Criando e exportando módulos.
 
 No Node.js, você pode criar e exportar módulos para compartilhar código entre diferentes partes do seu aplicativo. Isso é útil para organizar seu código de maneira modular e reutilizar funcionalidades em vários arquivos. Vamos dar uma olhada em como criar e exportar módulos:
 
@@ -460,9 +460,7 @@ Lembre-se de que, ao usar os módulos ES, a extensão `.mjs` é recomendada para
 
 Ambos os métodos (`require` e `import`) são válidos e amplamente utilizados, mas o uso de módulos ES oferece recursos mais modernos e é considerado o padrão futuro no desenvolvimento Node.js. Certifique-se de escolher o método que melhor atenda às suas necessidades e ao ambiente em que você está trabalhando.
 
-Faça um exemplo diferente dos anteriores
-
-Claro! Vamos criar um exemplo de módulo que lida com operações de strings, como contar o número de caracteres e inverter uma string. Vamos chamar o módulo de `stringUtils.js`.
+Vamos criar um outro exemplo de módulo que lida com operações de strings, como contar o número de caracteres e inverter uma string. Vamos chamar o módulo de `stringUtils.js`.
 
 **Passo 1: Criar um Módulo:**
 
@@ -524,7 +522,7 @@ Neste exemplo, criamos um módulo `stringUtils.js` que exporta duas funções (`
 
 Este é um exemplo simples de como criar, exportar e importar módulos no Node.js para realizar operações específicas. Você pode expandir esse conceito para criar módulos mais complexos e reutilizáveis em seus projetos.
 
-Nativos vs. módulos de terceiros.
+### Nativos vs. módulos de terceiros.
 
 Nativos e módulos de terceiros referem-se a diferentes tipos de bibliotecas e funcionalidades disponíveis no ecossistema do Node.js. Vamos explorar as diferenças entre eles:
 
@@ -566,12 +564,13 @@ Exemplos de módulos de terceiros populares incluem:
 
 Em resumo, módulos nativos são parte integrante do Node.js e oferecem funcionalidades essenciais, enquanto módulos de terceiros são bibliotecas adicionais desenvolvidas pela comunidade para resolver problemas específicos ou fornecer recursos extras. Ambos os tipos de módulos são fundamentais para o desenvolvimento eficaz de aplicativos Node.js.
 
-Mostre 5 exemplos de uso de modulos nativos, mas 5 exemplos de códigos com módulos de terceiros usados no e com node.js
+Veja 5 exemplos de uso de modulos nativos e 5 exemplos de códigos com módulos de terceiros usados no node.js
 
 **Exemplos de Uso de Módulos Nativos:**
 
 1. **Manipulação de Arquivos (fs):** Lendo e escrevendo em um arquivo usando o módulo `fs` nativo.
-```javascript
+
+```
 const fs = require('fs');
 
 fs.readFile('arquivo.txt', 'utf8', (err, data) => {
@@ -581,7 +580,7 @@ fs.readFile('arquivo.txt', 'utf8', (err, data) => {
 ```
 
 2. **Servidor HTTP (http):** Criando um servidor HTTP simples usando o módulo `http` nativo.
-```javascript
+```
 const http = require('http');
 
 const server = http.createServer((req, res) => {
@@ -593,7 +592,7 @@ server.listen(3000);
 ```
 
 3. **Manipulação de Caminhos (path):** Construindo caminhos de arquivos usando o módulo `path` nativo.
-```javascript
+```
 const path = require('path');
 
 const diretorio = '/caminho/para/pasta';
@@ -604,14 +603,14 @@ console.log(caminhoCompleto);
 ```
 
 4. **Processo do Sistema (process):** Obtendo informações do processo atual usando o módulo `process` nativo.
-```javascript
+```
 console.log('ID do Processo:', process.pid);
 console.log('Diretório de Trabalho:', process.cwd());
 console.log('Argumentos de Linha de Comando:', process.argv);
 ```
 
 5. **Módulo de Tempo (setTimeout):** Usando a função nativa `setTimeout` para atrasar a execução de um código.
-```javascript
+```
 setTimeout(() => {
   console.log('Passaram-se 2 segundos.');
 }, 2000);
