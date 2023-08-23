@@ -81,7 +81,7 @@ Para dominar o Node.js desde o básico até um nível avançado e ser capaz de c
 
 Lembre-se de que a prática é fundamental para o aprendizado eficaz. À medida que você avança em cada tópico, construa pequenos projetos ou exercícios para aplicar o que aprendeu. Isso ajudará a solidificar seu conhecimento e desenvolver habilidades práticas na construção de aplicativos Node.js robustos.
 
-O que é o Node.js e seu ambiente de execução.
+## O que é o Node.js e seu ambiente de execução.
 
 Node.js é um ambiente de execução de código JavaScript do lado do servidor. Ele permite que você execute código JavaScript no servidor, em vez de apenas no navegador. Isso abre uma série de possibilidades para construir aplicativos de servidor robustos, escaláveis e eficientes.
 
@@ -103,7 +103,7 @@ Principais características do Node.js e seu ambiente de execução:
 
 Em resumo, o Node.js é uma plataforma que permite aos desenvolvedores usar JavaScript para criar aplicativos do lado do servidor com eficiência assíncrona e orientada a eventos. Sua natureza assíncrona e capacidade de lidar com várias conexões simultâneas o tornam uma escolha popular para construir aplicativos em tempo real, APIs RESTful, microsserviços e outras soluções de servidor.
 
-Quem e porque foi criado o node.js?
+## Quem e porque foi criado o node.js?
 
 O Node.js foi criado por Ryan Dahl e foi inicialmente lançado em 2009. Ele desenvolveu o Node.js como resposta às limitações das abordagens tradicionais de desenvolvimento do lado do servidor, que frequentemente eram baseadas em threads e operações de entrada/saída bloqueantes.
 
@@ -119,7 +119,7 @@ Os principais motivos pelos quais Ryan Dahl criou o Node.js incluem:
 
 O resultado foi o Node.js, que se tornou uma plataforma popular para construir aplicativos do lado do servidor, particularmente em cenários de alto desempenho, aplicativos em tempo real e microsserviços. A abordagem assíncrona e orientada a eventos do Node.js permitiu que os desenvolvedores construíssem aplicativos escaláveis e eficientes, lidando com muitas conexões simultâneas sem o uso excessivo de recursos. Desde então, o Node.js evoluiu e se tornou uma parte essencial do ecossistema de desenvolvimento, com uma ampla comunidade e uma extensa biblioteca de pacotes disponíveis via npm.
 
-Instalação do Node.js e npm (Node Package Manager) no windows e no linux
+## Instalação do Node.js e npm (Node Package Manager) no windows e no linux
 
 A instalação do Node.js e do npm (Node Package Manager) pode variar ligeiramente entre o Windows e as distribuições Linux. Aqui estão as etapas básicas para cada plataforma:
 
